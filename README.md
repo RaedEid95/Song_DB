@@ -10,7 +10,9 @@ There is a company called sparkify having an Application  for live songs and the
 
 1. Analyze the data source and define the keys
 2. Create a schema that will help to have a high-performance query (Star Schema)
-![UML Schema](UML class.png)
+
+![UML Schema](./UML_class.png)
+
 3. Create DB using shell and user and gain all privileges for the user on the DB
 4. Create a python script that will Create tables based on the UML 
 5. Create an ETL process that will parse the JSON files and Insert the data in the DB
