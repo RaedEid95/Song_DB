@@ -13,7 +13,6 @@ def create_table(cur,conn):
 
 def drop_table_if_exisit(cur,conn):
     for query in queries.drop_table_queries:
-        print("hi")
         cur.execute(query)
         conn.commit()
 

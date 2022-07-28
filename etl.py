@@ -13,7 +13,6 @@ def process_song_file(cur,path):
         song_table_details = df[["song_id","title","artist_id","year","duration"]].values[0].tolist()
     except Exception as e :
         print(e)
-    # print(song_table_details)
 
     cur.execute(queries.song_table_insert,song_table_details)
 
@@ -116,7 +115,7 @@ def main():
 
 
     process_data(cur, conn, filepath='/home/raed/code/Modeling_Postgresql/Song_DB/Data/data/song_data', func=process_song_file)
-    # process_data(cur, conn, filepath='/home/raed/code/Modeling_Postgresql/Song_DB/Data/data/log_data', func=process_log_file)
+    process_data(cur, conn, filepath='/home/raed/code/Modeling_Postgresql/Song_DB/Data/data/log_data', func=process_log_file)
 
     conn.close()
 
